@@ -7,56 +7,22 @@
 
 body {
     font-family: 'Courier New', Courier, monospace;
-    background-color: #000;
-    color: #fff;
+    background-color: #0b0c10; /* Dark background color */
+    color: #61dafb; /* Neon blue text color */
     overflow: hidden;
 }
 
-/* Terminal Container */
-.terminal-container {
+/* Full Screen Terminal */
+.full-screen-terminal {
     position: relative;
-    width: 80%;
-    max-width: 800px;
-    margin: 50px auto;
-    background-color: #1e1e1e;
-    border: 2px solid #444;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-/* Terminal Header */
-.terminal-header {
+    width: 100%;
+    height: 100vh;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
     align-items: center;
-    height: 30px;
-    background-color: #2c2c2c;
-}
-
-.circle {
-    width: 10px;
-    height: 10px;
-    margin-left: 5px;
-    border-radius: 50%;
-}
-
-.red { background-color: #ff5f56; }
-.yellow { background-color: #ffbd2e; }
-.green { background-color: #27c93f; }
-
-/* Terminal Body */
-.terminal-body {
+    justify-content: center;
     padding: 20px;
-    font-size: 14px;
-    line-height: 1.6;
     overflow-y: auto;
-    max-height: 600px;
-}
-
-/* Neon Text */
-.neon-text {
-    color: #40faa6;
-    text-shadow: 0 0 10px #40faa6, 0 0 20px #40faa6, 0 0 40px #40faa6;
 }
 
 /* Loading Screen */
@@ -66,9 +32,17 @@ body {
     margin-bottom: 20px;
 }
 
+/* Neon Text */
+.neon-text {
+    color: #61dafb; /* Neon blue */
+    text-shadow: 0 0 10px #61dafb, 0 0 20px #61dafb, 0 0 40px #61dafb;
+}
+
 /* Resume Content */
 .resume-content {
     display: none; /* Hidden initially */
+    max-width: 800px;
+    width: 100%;
 }
 
 .section {
@@ -76,7 +50,7 @@ body {
 }
 
 .section-title {
-    color: #40faa6;
+    color: #61dafb; /* Neon blue */
     border-bottom: 1px solid #444;
     padding-bottom: 5px;
 }
